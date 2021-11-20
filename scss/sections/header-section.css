@@ -1,0 +1,147 @@
+.welcome {
+  background: var(--bgDark);
+  padding-bottom: 60px;
+}
+
+.welcome-text {
+  max-width: 598px;
+  position: absolute;
+  padding-top: 150px;
+}
+
+.welcome-sliders {
+  display: flex;
+  justify-content: end;
+}
+
+.header_slide-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-title {
+  font-family: Forum;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.header-subtitle {
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #FFFFFF;
+  margin-bottom: 75px;
+}
+
+.header-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 30px 66px;
+  background: var(--darkRed);
+  font-size: var(--defaultSize);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+}
+
+.header-btn:hover {
+  background: var(--goldFont);
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+@media (max-width: 1024px) {
+  .welcome-text {
+    max-width: 398px;
+    position: absolute;
+    padding-top: 50px;
+  }
+
+  .header-title {
+    font-family: Forum;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 5px;
+  }
+
+  .header-subtitle {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+  }
+
+  .header_slide-image {
+    max-width: 700px;
+  }
+
+  .header-btn {
+    padding: 17px 37px;
+  }
+}
+@media (max-width: 768px) {
+  .header-title {
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .header-subtitle {
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #fff;
+    text-align: center;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .welcome-text {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .welcome-sliders {
+    display: block;
+  }
+
+  .header_slide-image {
+    background-image: url(images/header-slider-medium.jpg);
+  }
+
+  .header_slide-image {
+    max-width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=header-section.css.map */

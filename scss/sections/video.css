@@ -1,0 +1,46 @@
+.video {
+  padding: 75px 0;
+}
+
+.video-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+.video-title h2 {
+  width: 50%;
+  margin: 0;
+}
+.video-title p {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  margin: 0;
+}
+
+.video-museum {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.recomend-video {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recomend-video-block {
+  border: 1px solid black;
+  width: 452px;
+  height: 254px;
+  margin-bottom: 40px;
+}
+
+.video-btn-scroll {
+  margin: 0 auto;
+  height: 12px;
+  width: 212px;
+  background: #000;
+}/*# sourceMappingURL=video.css.map */

@@ -1,0 +1,9 @@
+.gallery {
+  background: var(--bgDark);
+  padding-top: 75px;
+}
+
+.gallery-title h2 {
+  color: #fff;
+  margin-bottom: 75px;
+}/*# sourceMappingURL=gallery.css.map */

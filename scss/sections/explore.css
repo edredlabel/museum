@@ -1,0 +1,138 @@
+.explore {
+  background: var(--bgDark);
+  padding: 75px 0;
+}
+
+.explore-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.explore-title {
+  margin-right: 60px;
+}
+.explore-title h2 {
+  color: #fff;
+  margin-bottom: 25px;
+}
+.explore-title hr {
+  height: 3px;
+  border: none;
+  background: var(--darkRed);
+  margin: 0;
+  margin-bottom: 75px;
+}
+.explore-title p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.explore-title span {
+  color: #CAAA7D;
+}
+
+.explore-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .explore {
+    padding: 60px 0;
+  }
+
+  .explore-block {
+    display: block;
+  }
+
+  .explore-title {
+    margin: 0;
+  }
+  .explore-title h2 {
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 5px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .explore-title hr {
+    display: block;
+    height: 3px;
+    border: none;
+    background: var(--darkRed);
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  .explore-title p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 38px;
+    color: #fff;
+    margin: 0;
+  }
+  .explore-title p:last-child {
+    display: none;
+  }
+
+  .explore-image {
+    margin-top: 62px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .explore {
+    padding: 40px 0;
+  }
+
+  .explore-block {
+    display: block;
+  }
+
+  .explore-title {
+    margin: 0;
+  }
+  .explore-title h2 {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 5px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .explore-title hr {
+    display: block;
+    height: 3px;
+    border: none;
+    background: var(--darkRed);
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .explore-title p {
+    display: none;
+  }
+
+  .explore-image {
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  .explore {
+    padding: 40px 0;
+  }
+
+  .explore-block {
+    display: block;
+  }
+
+  .explore-title {
+    margin: 0;
+  }
+  .explore-title h2 {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=explore.css.map */

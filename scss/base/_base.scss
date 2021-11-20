@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    &:before {
+        box-sizing: border-box;
+    }
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: var(--mainFont);
+    font-style: var(--defaultSize);
+}
+
+.container {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul { 
+    list-style: none;
+}
+
+a { 
+    text-decoration: none;
+}

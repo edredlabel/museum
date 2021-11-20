@@ -1,0 +1,109 @@
+header {
+    position: relative;
+    background: #030303;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
+    width: 200px;
+    height: 150px;
+}
+
+.logo-text {
+    font-family: Forum;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 775px;
+}
+
+.header-link {
+    font-family: var(--mainFont);
+    font-size: 22px;
+    font-weight: 200;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.header-link:hover {
+    color: var(--goldFont);
+    transition: 0.3s;
+}
+
+.header-link:active {
+    color: var(--activeColor);
+}
+
+@media (max-width: 1024px) {
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 56px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .close-menu span {
+        display: block;
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        margin: 6px 0;
+    }
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_logo-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: center;
+        width: 200px;
+        height: 110px;
+    }
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+   .header_logo-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: center;
+        width: 130px;
+        height: 90px;
+    }
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+}
