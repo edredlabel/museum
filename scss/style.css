@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+img, svg, iframe {
+  vertical-align: top;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
@@ -742,4 +746,237 @@ header {
 
 .gallery-title h2 {
   color: #fff;
+  margin-bottom: 75px;
+}
+
+.gallery-column {
+  display: flex;
+  position: relative;
+}
+.gallery-column::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  height: 360px;
+}
+
+.gallery-element {
+  margin-bottom: 24px;
+  margin-right: 36px;
+}
+.gallery-element img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-element:last-child {
+  margin-bottom: 0;
+}
+
+.gallery-block-one {
+  margin-top: 50px;
+}
+
+.gallery-block-three {
+  margin-top: 50px;
+}
+
+.tickets {
+  padding-top: 75px;
+}
+
+.tickets-title h2 {
+  margin-bottom: 25px;
+}
+
+.tickets-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tickets-img img {
+  width: 100%;
+  height: auto;
+}
+
+.tickets-function {
+  display: flex;
+  justify-content: space-between;
+  width: 660px;
+}
+
+.ticket-type h4 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000;
+  margin-bottom: 50px;
+}
+.ticket-type label {
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0em;
+  margin-bottom: 25px;
+}
+
+.ticket-amount h4 {
+  display: flex;
+  justify-content: end;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 25px;
+}
+.ticket-amount input {
+  margin-bottom: 10px;
+}
+.ticket-amount p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.total-price {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.buy {
+  border: none;
+  width: 175px;
+  height: 50px;
+  background: #000;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.buy:hover {
+  background: var(--goldFont);
+  color: #000;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.ticket-museum-image {
+  height: 400px;
+  background: url("../img/parallax.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0 72%;
+  background-attachment: fixed;
+  margin-top: 75px;
+}
+
+.contacts {
+  padding: 60px 0;
+}
+
+.contacts-block {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-block address {
+  font-family: var(--mainFont);
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 25px;
+  font-style: normal;
+  margin-bottom: 25px;
+}
+.contacts-block a {
+  display: inline-block;
+  font-family: var(--mainFont);
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.contacts-name {
+  font-family: var(--mainFont);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  background: var(--bgDark);
+  padding-top: 75px;
+}
+
+.footer-menu-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.logo-text {
+  margin-left: 25px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin-left: 145px;
+}
+.footer-list li {
+  margin-bottom: 25px;
+  margin-right: 150px;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.socials-link {
+  margin-right: 25px;
+}
+
+.socials-link:last-child {
+  margin-right: 0;
+}
+
+.footer-hr {
+  margin: 50px 0;
+  border: none;
+  height: 3px;
+  background: #666;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  color: #fff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
 }/*# sourceMappingURL=style.css.map */

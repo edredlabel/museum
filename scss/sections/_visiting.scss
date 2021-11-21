@@ -1,0 +1,222 @@
+.visiting {
+    margin: 75px 0;
+}
+
+.visiting-title {
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--goldFont);
+    margin-bottom: 25px;
+}
+
+.hr-long {
+    height: 3px;
+    border: none;
+    background-color: var(--darkRed);
+    margin-bottom: 75px;
+}
+
+.hr-mini {
+    height: 2px;
+    border: none;
+    background-color: var(--darkRed);
+    width: 70%;
+    margin: 0;
+    transition: .3s;
+}
+
+.visiting-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 75px  60px;
+    max-width: 1440px
+}
+
+.visiting-block {
+    h3 {
+        font-family: var(--forumFont);
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+    }
+
+    h3:hover + hr {
+        width: 100%;
+    }
+
+    hr {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .visiting-virtual {
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 26px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .visiting-text {
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .visiting {
+        margin: 60px 0;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .visiting-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px 108px;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .visiting-block {
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 25px;
+        }
+        h3 {
+            font-family: var(--forumFont);
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 31px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }  
+        hr {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+        .visiting-virtual {
+            font-weight: 200;
+            font-size: 20px;
+            line-height: 23px;
+        }
+        .visiting-text {
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .visiting {
+        margin: 40px 0;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .visiting-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 56px;
+        max-width: 616px;
+        margin: 0 auto;
+    }
+
+    .visiting-block {
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 25px;
+        }
+        h3 {
+            font-family: var(--forumFont);
+            font-size: 22px;
+            line-height: 24px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }  
+        hr {
+            width: 54%;
+            margin-bottom: 10px;
+        }
+        .visiting-virtual {
+            font-weight: 200;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        .visiting-text {
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .visiting {
+        margin: 40px 0;
+        h2 {
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .visiting-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .visiting-block {
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 25px;
+        }
+        h3 {
+            font-family: var(--forumFont);
+            font-size: 28px;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }  
+        hr {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+        .visiting-virtual {
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .visiting-text {
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
