@@ -917,47 +917,42 @@ header {
   padding-top: 75px;
 }
 
-.footer-menu-navigation {
+.footer-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
 .footer-logo {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-}
-
-.logo-text {
-  margin-left: 25px;
-}
-
-.footer-content {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-logo img {
+  margin-right: 25px;
 }
 
-.footer-list {
+.footer-items {
+  width: 363px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 25px 150px;
+  margin: 0;
   padding: 0;
-  margin-left: 145px;
-}
-.footer-list li {
-  margin-bottom: 25px;
-  margin-right: 150px;
 }
 
 .footer-socials {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
 }
 
-.socials-link {
+.footer-socials-item {
+  display: flex;
   margin-right: 25px;
+  align-items: flex-end;
 }
 
-.socials-link:last-child {
+.footer-socials-item:last-child {
   margin-right: 0;
 }
 
@@ -979,4 +974,88 @@ header {
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 2px;
+}
+
+@media (max-width: 1024px) {
+  .footer-items {
+    width: 313px;
+    gap: 25px 100px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-wrapper {
+    max-width: 728px;
+    display: grid;
+    grid-template-columns: 30% 60%;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footer-items {
+    gap: 25px 185px;
+  }
+
+  .footer-socials {
+    max-width: 340px;
+    margin-top: 42px;
+    grid-column-end: 3;
+    margin-left: 20px;
+  }
+
+  .footer-hr {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .footer {
+    padding-top: 40px;
+  }
+
+  .footer-wrapper {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footer-items {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 87px;
+    margin-top: 40px;
+  }
+
+  .footer-list a {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+  }
+
+  .footer-socials {
+    max-width: 260px;
+    margin-top: 40px;
+    grid-column-end: 3;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .footer-socials-item {
+    margin-right: 5px;
+  }
+
+  .footer-hr {
+    margin-top: 40;
+  }
+
+  .footer-production {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
