@@ -32,3 +32,83 @@
     line-height: 32px;
     margin-bottom: 50px;
 }
+
+@media (max-width: 1024px) {
+    .our-contacts {
+        margin-right: 16px;
+        h4 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+
+        }
+        address {
+            width: 274px;
+        }
+        a {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .visiting-title {
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: 5px;
+    }
+    .hr-long {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .contacts-name {
+        margin-bottom: 40px;
+    }
+    .our-contacts {
+        display: block;
+        address {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        a {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .contacts-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .visiting-title {
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 5px;
+    }
+    .hr-long {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .contacts-name {
+        margin-bottom: 40px;
+    }
+    .our-contacts {
+        display: block;
+        address {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        a {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+    }
+}
