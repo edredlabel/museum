@@ -1,22 +1,38 @@
 .welcome {
     background: var(--bgDark);
-    padding-bottom: 60px;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 810px;
 }
 
 .welcome-text {
-    max-width: 598px;
     position: absolute;
+    z-index: 5;
     padding-top: 150px;
+    width: 598px;
 }
 
 .welcome-sliders {
+    position: absolute;
+    right: 0;
+    top: 0;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    max-height: 810px;
+    max-width: 1440px;;
 }
 
-.header_slide-image {
-    max-width: 100%;
+.header_slide-large {
+    max-width: 1000px;
     height: auto;
+}
+
+.header_slide-medium {
+    display: none;
 }
 
 .img-logo {
@@ -71,10 +87,27 @@
 }
 
 @media (max-width: 1024px) {
+    .welcome-container {
+        max-height: 700px;
+    }
     .welcome-text {
         max-width: 398px;
         position: absolute;
         padding-top: 50px;
+    }
+    .welcome-sliders {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: flex-end;
+        max-height: 810px;
+        max-width: 1440px;;
+    }
+    
+    .header_slide-large {
+        max-width: 700px;
+        height: auto;
     }
     .header-title {
         font-family: Forum;
@@ -91,7 +124,7 @@
         font-weight: 300;
         line-height: 28px;
         letter-spacing: 2px;
-        
+        margin-top: 0;
         color: #FFFFFF;
         margin-bottom: 50px;
     }
@@ -99,11 +132,19 @@
         max-width: 700px;
     }
     .header-btn {
+        display: inline-block;
         padding: 17px 37px;
     }
 }
 
 @media (max-width: 768px) {
+    .welcome-container {
+        max-height: 861px;
+        display: block;
+    }
+    .welcome-sliders {
+        position: relative;
+    }
     .header-title {
         font-family: Forum;
         font-size: 40px;
@@ -132,15 +173,74 @@
         position: relative;
         margin: 0 auto;
         padding-top: 0;
+        width: 332px;
+        height: 165px;
+        margin-bottom: 50px;
     }
     .welcome-sliders {
         display: block;
     }
-    .header_slide-image {
-        background-image: url(images/header-slider-medium.jpg);
+    .header_slide-large {
+        display: none;
+    }
+    .header_slide-medium {
+        display: block;
     }
     .header_slide-image {
         max-width: 100%;
         height: auto;
     }
 }   
+
+@media (max-width: 420px) {
+    .welcome {
+        padding-bottom: 20px;
+    }
+    .welcome-container {
+        max-height: 544px;
+    }
+    .header-title {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 5px;
+        text-align: center;
+        color: #fff;
+    }
+    .header_logo-link {
+        width: 200px;
+    }
+    .header-subtitle {
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 23px;
+        letter-spacing: 2px;
+        text-align: left;
+        color: #fff;   
+        text-align: center;   
+    }
+    .header-btn{
+        display: none;
+    }
+    .welcome-text {
+        position: relative;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+    .welcome-sliders {
+        display: block;
+    }
+    .header_slide-large {
+        display: none;
+    }
+    .header_slide-medium {
+        width: 100%;
+        display: block;
+    }
+    .header_slide-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
